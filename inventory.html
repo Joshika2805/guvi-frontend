@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">IMS</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Logout</a>
+            </nav>
+        </header>
+
+        <h1>Manage Inventory</h1>
+
+        <!-- Form to Add New Item -->
+        <form id="item-form">
+            <input type="text" id="name" placeholder="Item Name" required />
+            <input type="text" id="description" placeholder="Description" required />
+            <input type="number" id="price" placeholder="Price" required />
+            <input type="number" id="stock" placeholder="Stock" required />
+            <button type="submit">Add Item</button>
+        </form>
+
+        <!-- Search Bar -->
+        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+
+        <!-- Table for Inventory -->
+        <table border=1px,id="inventory-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody id="item-list"></tbody>
+        </table>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
